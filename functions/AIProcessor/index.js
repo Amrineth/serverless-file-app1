@@ -59,4 +59,8 @@ module.exports = async function (context, myBlob) {
   } catch (err) {
     context.log.error('[ERROR]', err.message);
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> aaeb7a2 (Added project structure and files)
