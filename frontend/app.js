@@ -1,5 +1,5 @@
 // Replace with your APIM Gateway URL after Phase 4
-const API_URL = "https://YOUR_APIM_NAME.azure-api.net/files";
+const API_URL = "https://fileapp-apim.azure-api.net";
  
 function updateLabel(input) {
   document.getElementById('fileLabel').textContent =
