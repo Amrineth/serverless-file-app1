@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure File Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Powered by Azure Computer Vision</div>
+    <h1>File Analyzer</h1>
+    <p>Upload an image for instant AI analysis</p>
+    <label class="upload-area" for="fileInput">
+      <span id="fileLabel">Click to choose an image...</span>
+      <input type="file" id="fileInput" accept="image/*"
+        onchange="updateLabel(this)" />
+    </label>
+    <button id="btn" onclick="uploadFile()">Upload &amp; Analyze</button>
+    <div id="result"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+ 

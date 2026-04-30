@@ -1,0 +1,39 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #003A6C 0%, #0078D4 60%, #50E6FF 100%);
+  min-height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+}
+.container {
+  background: white; border-radius: 12px;
+  padding: 48px 44px; text-align: center;
+  box-shadow: 0 20px 60px rgba(0,60,120,0.35);
+  max-width: 480px; width: 92%;
+}
+.badge {
+  display: inline-block; background: #0078D4; color: white;
+  font-size: 11px; font-weight: 700; padding: 4px 14px;
+  border-radius: 20px; margin-bottom: 18px; letter-spacing: 0.4px;
+}
+h1 { color: #003A6C; font-size: 24px; margin-bottom: 8px; }
+p { color: #605E5C; font-size: 13px; margin-bottom: 24px; }
+.upload-area {
+  display: block; border: 2px dashed #C8C6C4; border-radius: 8px;
+  padding: 22px; cursor: pointer; margin-bottom: 20px;
+  transition: border-color 0.2s;
+}
+.upload-area:hover { border-color: #0078D4; }
+.upload-area input { display: none; }
+.upload-area span { color: #605E5C; font-size: 13px; }
+button {
+  background: #0078D4; color: white; border: none;
+  padding: 13px 0; border-radius: 6px; font-size: 15px;
+  font-weight: 700; cursor: pointer; width: 100%;
+  transition: background 0.2s;
+}
+button:hover { background: #005A9E; }
+button:disabled { background: #C8C6C4; cursor: not-allowed; }
+#result { margin-top: 20px; font-size: 13px; color: #107C10; font-weight: 600; }
+#result.error { color: #A4262C; }
+ 
